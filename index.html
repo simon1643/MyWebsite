@@ -11,9 +11,13 @@
 
 <body>
 
+    
+
     <div class="navbar">
-        <a href="#">Link project 1</a>
+        <a href="index.html"><img src="img/LogoFinaal_blauw.png" style="width:30px;height:45px;"/></a>
+        <a href="project.html">Link project 1</a>
     </div>
+    
 
     <div class="header">
         <h1>My Website</h1>
@@ -25,21 +29,20 @@
     <div class="row">
         <div class="side">
             <h2>Hallo ik ben Simon</h2>
-            <h5>Photo of me:</h5>
-            <img src="Foto_Simon.jpg" style="width:230px;height:300px;">
+            <img src="img/Foto_Simon.jpg" style="width:300px;height:300px;">
             <p>Ik ben Simon en studeer Industrieel Ingenieur in Kortrijk. Ik woon in Limburg en zit momenteel op kot in Kortrijk. Ik ben bezig met te schakelen naar een master Industrieel Ingenieur - Industrieel Ontwerpen.</p>
             <h3>UGent campus Kortrijk</h3>
-            <img src="logo_UGent_CK_NL_RGB_2400_kleur.png" style="width:200px;height:150px;">
+            <img src="img/logo_UGent_CK_NL_RGB_2400_kleur.png" style="width:200px;height:150px;">
             <br>
-            <img src="UGent_Campus_Kortrijk.png" style="width:400px;height:300px;">
+            <img src="img/UGent_Campus_Kortrijk.png" style="width:400px;height:300px;">
         </div>
         <div class="main">
             <h2>Mijn CV</h2>
-            <img src="logoPSD.png" style="width:300px;height:100px;">
-            <img src="images.png" style="width:100px;height:100px;">
-            <img src="UCLL.png" style="width:300px;height:100px;">
-            <img src="images.png" style="width:100px;height:100px;">
-            <img src="logo_UGent_CK_NL_RGB_2400_kleur.png" style="width:300px;height:100px;">
+            <img src="img/logoPSD.png" style="width:300px;height:100px;">
+            <img src="img/images.png" style="width:100px;height:100px;">
+            <img src="img/UCLL.png" style="width:300px;height:100px;">
+            <img src="img/images.png" style="width:100px;height:100px;">
+            <img src="img/logo_UGent_CK_NL_RGB_2400_kleur.png" style="width:300px;height:100px;">
             <h3>Onderwijs</h3>
             <p>Middelbaar: Elektromechanica</p>
             <p>Hoger onderwijs: Professionele Bachelor Elektromechanica</p>
@@ -57,9 +60,29 @@
     </div>
 
     <div class="footer">
-        <h2>U kan mij contacteren op simonsebastiaan.land@ugent.be</h2>
+        <p>U kan mij contacteren op <a href="mailto:simonsebastiaan.land@ugent.be">mijn email</a></h2>
+            <br>
+
+            <button onclick="darkMode()">Darkmode</button>
+            <button onclick="lightMode()">Lightmode</button>
+
+           
     </div>
+    <script>
+        function darkMode() {
+          var element = document.body;
+          var content = document.getElementById("DarkModetext");
+          element.className = "dark-mode";
+        }
+        function lightMode() {
+          var element = document.body;
+          var content = document.getElementById("DarkModetext");
+          element.className = "light-mode";
+        }
+      </script>
+  </div>
 
 </body>
+
 
 </html>
